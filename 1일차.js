@@ -4,9 +4,13 @@ let userId = 1938103211
 
 const j = '!';
 const FS = FileStream;
-const Path = '/sdcard/RPG/', UserListPath = '/sdcard/RPG/UserList.txt';
+const Path = '/sdcard/RPG/', UserListPath = '/sdcard/RPG/UserList.txt', RPGItemPath1 = '/sdcard/RPG/ItemData1.txt';
 
-if(!FS.read(UserListPath)) FS.write(UserListPath, JSON.stringify([], null, 4));
+let CreateArrayFile = (path) => {
+    if(!FS.read(path)) FS.write(path, JSON.stringify([], null, 4));
+}
+
+CreateArrayFile(UserListPath);
 
 let NameLists = JSON.parse(FS.read(UserListPath));
 
