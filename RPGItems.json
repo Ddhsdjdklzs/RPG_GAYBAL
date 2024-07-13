@@ -1,6 +1,6 @@
 [
     {"Name" : "구리 슬라브", "Code" : "A0101", "Rank" : "일반", "Purpose" : "장식용 아이템",
-    
+    "ConnectedNPC" : [],
     "Material" : [{"Name" : "구리 주괴", "Amount" : 4}],
     "Useage" : "-", "Cost" : 7500, "MakeLvL" : 2, "Smelter_Machine" : [],
     "SimpleEx" : "구리구리한 갈색을 띄고 광이 나는 반블록 모양",
